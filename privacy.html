@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy &amp; Terms | Dubuque Home Buyers</title>
+<meta name="description" content="Privacy Policy, Terms & Conditions, and SMS Policy for Dubuque Home Buyers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --white:      #ffffff;
+  --off-white:  #f8f8f8;
+  --light-gray: #f2f2f0;
+  --mid-gray:   #e5e5e3;
+  --text-light: #9aa0a8;
+  --text-mid:   #555963;
+  --text-dark:  #1a1e24;
+  --blue:       #1a6bbd;
+  --blue-dark:  #0f4d8a;
+  --blue-pale:  #eef4fb;
+  --shadow-sm:  0 2px 12px rgba(0,0,0,0.07);
+  --shadow-md:  0 8px 32px rgba(0,0,0,0.10);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"Outfit",sans-serif;
+  color:var(--text-dark);
+  background:var(--white);
+  line-height:1.7;
+  font-weight:400;
+  font-size:15px;
+}
+h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:700;line-height:1.2;}
+a{color:var(--blue);text-decoration:none;transition:color 0.2s;}
+a:hover{color:var(--blue-dark);}
+
+/* ── HEADER ── */
+.header{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  background:rgba(255,255,255,0.97);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--mid-gray);
+  height:68px;display:flex;align-items:center;
+  padding:0 48px;justify-content:space-between;
+  box-shadow:var(--shadow-sm);
+}
+.header-logo{
+  font-family:"Cormorant Garamond",serif;
+  font-size:1.4rem;font-weight:700;color:var(--blue);
+  text-decoration:none;
+}
+.header-nav{display:flex;gap:32px;align-items:center;}
+.header-nav a{
+  text-decoration:none;color:var(--text-dark);
+  font-size:0.85rem;font-weight:500;transition:color 0.15s;
+}
+.header-nav a:hover{color:var(--blue);}
+.header-phone a{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--blue);color:#fff;
+  padding:10px 22px;border-radius:6px;
+  font-size:0.85rem;font-weight:600;
+  text-decoration:none;transition:background 0.2s;
+}
+.header-phone a:hover{background:var(--blue-dark);color:#fff;}
+
+/* ── HERO ── */
+.page-hero{
+  padding-top:68px;
+  background:linear-gradient(135deg,#0d2a4a 0%,#1a5096 100%);
+  padding:108px 48px 70px;
+  text-align:center;
+  position:relative;overflow:hidden;
+}
+.page-hero::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at 60% 40%,rgba(255,255,255,0.05) 0%,transparent 65%);
+}
+.page-hero-inner{position:relative;z-index:1;max-width:700px;margin:0 auto;}
+.page-hero h1{
+  color:#fff;
+  font-size:clamp(2.2rem,4vw,3.4rem);
+  margin-bottom:14px;
+  letter-spacing:0.01em;
+}
+.page-hero p{
+  color:rgba(255,255,255,0.65);
+  font-size:0.9rem;letter-spacing:0.05em;
+}
+.hero-tabs{
+  display:inline-flex;gap:0;margin-top:32px;
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:8px;overflow:hidden;
+}
+.hero-tab{
+  padding:10px 26px;
+  font-size:0.78rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;
+  color:rgba(255,255,255,0.6);
+  background:transparent;border:none;cursor:pointer;
+  text-decoration:none;transition:all 0.2s;
+  border-right:1px solid rgba(255,255,255,0.2);
+}
+.hero-tab:last-child{border-right:none;}
+.hero-tab:hover,.hero-tab.active{
+  background:rgba(255,255,255,0.12);
+  color:#fff;
+}
+
+/* ── LAYOUT ── */
+.page-wrap{padding-top:68px;}
+.page-layout{
+  display:grid;
+  grid-template-columns:220px 1fr;
+  gap:0;
+  max-width:1100px;
+  margin:0 auto;
+  padding:60px 48px;
+  align-items:start;
+}
+
+/* ── SIDEBAR TOC ── */
+.toc{
+  position:sticky;top:88px;
+  padding-right:40px;
+}
+.toc-title{
+  font-size:0.68rem;font-weight:700;letter-spacing:0.15em;
+  text-transform:uppercase;color:var(--text-light);
+  margin-bottom:14px;
+}
+.toc-section{margin-bottom:20px;}
+.toc-section-label{
+  font-size:0.72rem;font-weight:700;letter-spacing:0.08em;
+  text-transform:uppercase;color:var(--blue);
+  margin-bottom:8px;padding-bottom:6px;
+  border-bottom:1px solid var(--mid-gray);
+}
+.toc ul{list-style:none;}
+.toc ul li{margin-bottom:4px;}
+.toc ul li a{
+  font-size:0.8rem;color:var(--text-mid);
+  font-weight:500;transition:color 0.15s;
+  display:block;padding:3px 0 3px 10px;
+  border-left:2px solid transparent;
+  transition:all 0.15s;
+}
+.toc ul li a:hover{
+  color:var(--blue);
+  border-left-color:var(--blue);
+}
+
+/* ── CONTENT ── */
+.doc-content{min-width:0;}
+
+.policy-block{
+  padding:44px;
+  background:var(--white);
+  border:1px solid var(--mid-gray);
+  border-radius:10px;
+  margin-bottom:28px;
+  box-shadow:var(--shadow-sm);
+  transition:box-shadow 0.2s;
+}
+.policy-block:hover{box-shadow:var(--shadow-md);}
+
+.policy-block-header{
+  display:flex;align-items:center;gap:14px;
+  margin-bottom:28px;
+  padding-bottom:22px;
+  border-bottom:2px solid var(--light-gray);
+}
+.policy-icon{
+  width:44px;height:44px;border-radius:8px;
+  background:var(--blue-pale);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.2rem;flex-shrink:0;
+}
+.policy-block-header h2{
+  font-size:1.75rem;color:var(--text-dark);margin:0;
+}
+.policy-block-header .badge{
+  margin-left:auto;
+  font-size:0.65rem;font-weight:700;letter-spacing:0.1em;
+  text-transform:uppercase;
+  padding:4px 10px;border-radius:20px;
+  background:var(--blue-pale);color:var(--blue);
+  flex-shrink:0;
+}
+
+.policy-intro{
+  background:var(--off-white);
+  border-left:3px solid var(--blue);
+  border-radius:0 6px 6px 0;
+  padding:14px 18px;
+  margin-bottom:28px;
+  font-size:0.875rem;
+  color:var(--text-mid);
+  line-height:1.75;
+}
+
+.section-block{margin-bottom:26px;}
+.section-block h3{
+  font-family:"Outfit",sans-serif;
+  font-size:0.78rem;font-weight:700;
+  letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--text-dark);
+  margin-bottom:10px;
+  display:flex;align-items:center;gap:8px;
+}
+.section-block h3::before{
+  content:'';display:inline-block;
+  width:3px;height:14px;background:var(--blue);
+  border-radius:2px;flex-shrink:0;
+}
+.section-block p{
+  color:var(--text-mid);
+  font-size:0.875rem;
+  line-height:1.8;
+  margin-bottom:10px;
+}
+.section-block ul{
+  list-style:none;
+  margin:0 0 10px 0;
+}
+.section-block ul li{
+  color:var(--text-mid);
+  font-size:0.875rem;
+  line-height:1.8;
+  padding:5px 0 5px 20px;
+  position:relative;
+}
+.section-block ul li::before{
+  content:'';
+  position:absolute;left:0;top:14px;
+  width:6px;height:6px;border-radius:50%;
+  background:var(--blue);opacity:0.5;
+}
+
+.keyword{
+  display:inline-block;
+  background:#e8f1fa;color:var(--blue-dark);
+  font-weight:700;padding:1px 7px;border-radius:3px;
+  font-size:0.82rem;
+}
+
+/* ── FOOTER ── */
+.footer{
+  background:#111827;
+  color:rgba(255,255,255,0.5);
+  padding:36px 48px;
+  display:flex;align-items:center;justify-content:space-between;
+  font-size:0.78rem;
+  flex-wrap:wrap;gap:12px;
+}
+.footer a{color:rgba(255,255,255,0.5);transition:color 0.2s;}
+.footer a:hover{color:#fff;}
+
+/* ── RESPONSIVE ── */
+@media(max-width:860px){
+  .page-layout{grid-template-columns:1fr;padding:40px 24px;}
+  .toc{display:none;}
+  .page-hero{padding:100px 24px 56px;}
+  .header{padding:0 24px;}
+  .header-nav{display:none;}
+  .policy-block{padding:28px 22px;}
+  .footer{flex-direction:column;padding:28px 24px;text-align:center;}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <a href="index-4.html" class="header-logo">Dubuque Home Buyers</a>
+  <nav class="header-nav">
+    <a href="index-4.html">How It Works</a>
+    <a href="index-4.html">Sell Fast</a>
+    <a href="index-4.html">Cash Buyers</a>
+    <a href="index-4.html">Foreclosure</a>
+    <a href="index-4.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="header-phone">
+    <a href="tel:+15635429154">&#128222; (563) 542-9154</a>
+  </div>
+</header>
+
+<div class="page-wrap">
+
+  <!-- HERO -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <h1>Privacy &amp; Terms</h1>
+      <p>Effective Date: April 14, 2026</p>
+      <div class="hero-tabs">
+        <a href="#terms" class="hero-tab">Terms &amp; Conditions</a>
+        <a href="#privacy" class="hero-tab">Privacy Policy</a>
+        <a href="#sms" class="hero-tab">SMS Policy</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN LAYOUT -->
+  <div class="page-layout">
+
+    <!-- SIDEBAR TOC -->
+    <aside class="toc">
+      <div class="toc-title">On This Page</div>
+
+      <div class="toc-section">
+        <div class="toc-section-label">Terms &amp; Conditions</div>
+        <ul>
+          <li><a href="#t-use">Use of Website</a></li>
+          <li><a href="#t-offer">No Guarantee of Offer</a></li>
+          <li><a href="#t-agency">No Agency Relationship</a></li>
+          <li><a href="#t-advice">No Legal Advice</a></li>
+          <li><a href="#t-accuracy">Accuracy</a></li>
+          <li><a href="#t-liability">Limitation of Liability</a></li>
+          <li><a href="#t-third">Third-Party Relationships</a></li>
+          <li><a href="#t-mods">Modifications</a></li>
+        </ul>
+      </div>
+
+      <div class="toc-section">
+        <div class="toc-section-label">Privacy Policy</div>
+        <ul>
+          <li><a href="#p-collect">Information We Collect</a></li>
+          <li><a href="#p-use">How We Use It</a></li>
+          <li><a href="#p-consent">Communication Consent</a></li>
+          <li><a href="#p-sharing">Sharing of Information</a></li>
+          <li><a href="#p-obligation">No Obligation</a></li>
+          <li><a href="#p-protection">Data Protection</a></li>
+          <li><a href="#p-rights">Your Rights</a></li>
+        </ul>
+      </div>
+
+      <div class="toc-section">
+        <div class="toc-section-label">SMS Policy</div>
+        <ul>
+          <li><a href="#s-types">Types of Messages</a></li>
+          <li><a href="#s-consent">Consent</a></li>
+          <li><a href="#s-frequency">Message Frequency</a></li>
+          <li><a href="#s-optout">Opt-Out</a></li>
+          <li><a href="#s-support">Support</a></li>
+          <li><a href="#s-carrier">Carrier Disclaimer</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- DOCUMENT CONTENT -->
+    <main class="doc-content">
+
+      <!-- ── TERMS & CONDITIONS ── -->
+      <div class="policy-block" id="terms">
+        <div class="policy-block-header">
+          <div class="policy-icon">&#128196;</div>
+          <h2>Terms &amp; Conditions</h2>
+          <span class="badge">Effective 4/14/2026</span>
+        </div>
+        <div class="policy-intro">
+          By using this website, you agree to the following terms and conditions.
+        </div>
+
+        <div class="section-block" id="t-use">
+          <h3>Use of Website</h3>
+          <p>This website is provided for informational purposes only. You agree not to misuse the website or submit false or misleading information.</p>
+        </div>
+
+        <div class="section-block" id="t-offer">
+          <h3>No Guarantee of Offer</h3>
+          <p>Dubuque Home Buyer is a real estate investment company. We are not obligated to:</p>
+          <ul>
+            <li>Make an offer</li>
+            <li>Purchase any property</li>
+            <li>Respond within any specific timeframe</li>
+          </ul>
+          <p>All potential offers are subject to internal evaluation and criteria.</p>
+        </div>
+
+        <div class="section-block" id="t-agency">
+          <h3>No Agency Relationship</h3>
+          <p>Use of this website does not create:</p>
+          <ul>
+            <li>A real estate agent relationship</li>
+            <li>A fiduciary relationship</li>
+            <li>A client relationship</li>
+          </ul>
+          <p>Dubuque Home Buyer is not acting as your real estate agent, attorney, or advisor.</p>
+        </div>
+
+        <div class="section-block" id="t-advice">
+          <h3>No Legal or Financial Advice</h3>
+          <p>Nothing on this website constitutes legal, financial, or tax advice. You should consult licensed professionals before making any decisions.</p>
+        </div>
+
+        <div class="section-block" id="t-accuracy">
+          <h3>Accuracy of Information</h3>
+          <p>We do not guarantee that all information on this website is complete, accurate, or current.</p>
+        </div>
+
+        <div class="section-block" id="t-liability">
+          <h3>Limitation of Liability</h3>
+          <p>Dubuque Home Buyer is not liable for:</p>
+          <ul>
+            <li>Any losses or damages</li>
+            <li>Decisions made based on website content</li>
+            <li>Delays in communication or response</li>
+          </ul>
+        </div>
+
+        <div class="section-block" id="t-third">
+          <h3>Third-Party Relationships</h3>
+          <p>We may work with third-party buyers, partners, or service providers in evaluating or purchasing properties.</p>
+        </div>
+
+        <div class="section-block" id="t-mods">
+          <h3>Modifications</h3>
+          <p>We may update or modify these Terms at any time without prior notice.</p>
+        </div>
+
+        <div class="section-block">
+          <h3>Contact</h3>
+          <p>&#128231; <a href="mailto:Dubuquehomebuyer@gmail.com">Dubuquehomebuyer@gmail.com</a></p>
+        </div>
+      </div>
+
+      <!-- ── PRIVACY POLICY ── -->
+      <div class="policy-block" id="privacy">
+        <div class="policy-block-header">
+          <div class="policy-icon">&#128274;</div>
+          <h2>Privacy Policy</h2>
+          <span class="badge">Effective 4/14/2026</span>
+        </div>
+        <div class="policy-intro">
+          Dubuque Home Buyer ("Company," "we," "our," or "us") respects your privacy and is committed to protecting your personal information.
+        </div>
+
+        <div class="section-block" id="p-collect">
+          <h3>Information We Collect</h3>
+          <p>We may collect personal information that you voluntarily provide, including:</p>
+          <ul>
+            <li>Name</li>
+            <li>Phone number</li>
+            <li>Email address</li>
+            <li>Property address</li>
+            <li>Any additional details submitted through forms</li>
+          </ul>
+          <p>We may also collect non-personal information such as IP address, browser type, and website usage data.</p>
+        </div>
+
+        <div class="section-block" id="p-use">
+          <h3>How We Use Your Information</h3>
+          <p>We may use your information to:</p>
+          <ul>
+            <li>Contact you regarding your property or inquiry</li>
+            <li>Evaluate potential property purchases</li>
+            <li>Provide you with information about selling your property</li>
+            <li>Send follow-up communications via phone, text message, or email</li>
+            <li>Improve our website and services</li>
+          </ul>
+        </div>
+
+        <div class="section-block" id="p-consent">
+          <h3>Communication Consent</h3>
+          <p>By submitting your information through our website, you consent to be contacted by Dubuque Home Buyer via phone, text message, and email regarding your inquiry. Message and data rates may apply.</p>
+        </div>
+
+        <div class="section-block" id="p-sharing">
+          <h3>Sharing of Information</h3>
+          <p>We may share your information with:</p>
+          <ul>
+            <li>Real estate partners</li>
+            <li>Buyers or investors</li>
+            <li>Service providers assisting in evaluating or purchasing properties</li>
+          </ul>
+          <p>We do not sell your personal information.</p>
+        </div>
+
+        <div class="section-block" id="p-obligation">
+          <h3>No Obligation</h3>
+          <p>Submitting your information does not create any obligation for Dubuque Home Buyer to make an offer, purchase your property, or respond within a specific timeframe.</p>
+        </div>
+
+        <div class="section-block">
+          <h3>Not Legal or Financial Advice</h3>
+          <p>Dubuque Home Buyer is a real estate investment company. We do not provide legal, financial, or tax advice. You should consult qualified professionals regarding your situation.</p>
+        </div>
+
+        <div class="section-block" id="p-protection">
+          <h3>Data Protection</h3>
+          <p>We take reasonable steps to protect your information; however, no method of transmission over the internet is completely secure.</p>
+        </div>
+
+        <div class="section-block" id="p-rights">
+          <h3>Your Rights</h3>
+          <p>You may request to update or delete your information by contacting us.</p>
+        </div>
+
+        <div class="section-block">
+          <h3>Updates</h3>
+          <p>We may update this Privacy Policy at any time. Updates will be posted on this page.</p>
+        </div>
+      </div>
+
+      <!-- ── SMS POLICY ── -->
+      <div class="policy-block" id="sms">
+        <div class="policy-block-header">
+          <div class="policy-icon">&#128172;</div>
+          <h2>SMS / Text Messaging Policy</h2>
+          <span class="badge">Effective 4/14/2026</span>
+        </div>
+        <div class="policy-intro">
+          By providing your phone number and submitting your information, you agree to receive text messages from Dubuque Home Buyer.
+        </div>
+
+        <div class="section-block" id="s-types">
+          <h3>Types of Messages</h3>
+          <p>You may receive messages related to:</p>
+          <ul>
+            <li>Your property inquiry</li>
+            <li>Property evaluations</li>
+            <li>Cash offers</li>
+            <li>Follow-up communications</li>
+          </ul>
+        </div>
+
+        <div class="section-block" id="s-consent">
+          <h3>Consent</h3>
+          <p>You provide prior express consent to receive communications via SMS, including messages sent using automated systems where permitted by law.</p>
+          <p>Consent is not a condition of selling your property or receiving an offer.</p>
+        </div>
+
+        <div class="section-block" id="s-frequency">
+          <h3>Message Frequency</h3>
+          <p>Message frequency may vary based on your interaction.</p>
+        </div>
+
+        <div class="section-block">
+          <h3>Charges</h3>
+          <p>Message and data rates may apply depending on your mobile carrier.</p>
+        </div>
+
+        <div class="section-block" id="s-optout">
+          <h3>Opt-Out</h3>
+          <p>You may opt out at any time by replying <span class="keyword">STOP</span> to any message. After opting out, you will no longer receive SMS communications.</p>
+        </div>
+
+        <div class="section-block" id="s-support">
+          <h3>Support</h3>
+          <p>For help, reply <span class="keyword">HELP</span> or contact us at:</p>
+          <p>&#128231; <a href="mailto:Dubuquehomebuyer@gmail.com">Dubuquehomebuyer@gmail.com</a></p>
+        </div>
+
+        <div class="section-block" id="s-carrier">
+          <h3>Carrier Disclaimer</h3>
+          <p>Mobile carriers are not responsible for delayed or undelivered messages.</p>
+        </div>
+
+        <div class="section-block">
+          <h3>No Guarantee</h3>
+          <p>Submitting your information does not guarantee that you will receive an offer or be contacted within a specific timeframe.</p>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>&copy; 2026 Dubuque Home Buyers. All rights reserved.</p>
+  <p>
+    <a href="tel:+15635429154">(563) 542-9154</a>
+    &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+    <a href="mailto:dubuquehomebuyer@gmail.com">dubuquehomebuyer@gmail.com</a>
+    &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+    <a href="privacy.html">Privacy &amp; Terms</a>
+  </p>
+</footer>
+
+</body>
+</html>
